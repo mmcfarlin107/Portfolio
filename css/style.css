@@ -2,6 +2,7 @@ body{
   background-color: rgba(5,5,5,0.9);
   color: white;
   font-size: 15px;
+  max-width: 100%;
 
 }
 main{

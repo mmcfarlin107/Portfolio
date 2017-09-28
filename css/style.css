@@ -2,11 +2,11 @@ body{
   background-color: rgba(5,5,5,0.9);
   color: white;
   font-size: 15px;
-  max-width: 100%;
-
 }
 main{
-  margin: 0px 15px;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  max-width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;

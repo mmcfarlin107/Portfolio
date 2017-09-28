@@ -53,6 +53,9 @@ function progressGrowth(){
     }
   }
 
+  $(window).ready(function(){
+    moveOpenSign();
+  });
   $(window).resize(function(){
     moveOpenSign();
 })

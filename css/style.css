@@ -64,7 +64,7 @@ h1{
   text-align: center;
   margin-top: 2%;
   padding-top: 2%;
-  background-color: rgba(0, 0, 133, 0.8);
+  background-color: rgba(0, 0, 118, 0.8);
 }
 
 .img-container{
@@ -91,6 +91,13 @@ display: block;
   overflow: hidden;
   border-radius: 50%;
   border: 2px solid rgba(84, 78, 78, 1);
+}
+
+.skill-name{
+  display: inline-block;
+  padding: 2%;
+  background-color: rgba(128,0,0,.8);
+  margin: 1px;
 }
 
 #headshot{

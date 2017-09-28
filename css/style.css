@@ -1,5 +1,5 @@
 html{
-font-size: 10px;
+font-size: 12px;
 }
 
 body{
@@ -23,8 +23,8 @@ h1{
 }
 
 #headshot-container{
-  max-width: 18%;
-  min-width: 10%;
+  max-width: 25%;
+  min-width: 17%;
   margin-left: 41%;
   margin-right: 41%;
   overflow: hidden;
@@ -162,6 +162,11 @@ body{
   #open-sign{
     float: right;
     margin-right: 10%;
+  }
+
+  #headshot-container{
+    max-width: 18%;
+    min-width: 10%;
   }
 
 }

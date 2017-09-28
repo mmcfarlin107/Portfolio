@@ -1,0 +1,150 @@
+body{
+  background-color: rgba(5,5,5,0.9);
+  color: white;
+  font-size: 15px;
+
+}
+main{
+  margin: 0px 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-align: center;
+}
+
+#paragraph{
+  text-align: center;
+}
+
+#headshot-container{
+  max-width: 18%;
+  min-width: 10%;
+  margin-left: 41%;
+  margin-right: 41%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid rgba(84, 78, 78, 1);
+}
+
+#headshot{
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+#open-sign{
+  max-width: 25%;
+  float: right;
+  margin-right: 10%;
+  text-align: center;
+  margin-top: 2%;
+}
+
+#opps{
+  white-space: nowrap;
+}
+
+#landing-page{
+  height: 100vh;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+#progress-bar1{
+  background-color: rgba(178, 0, 0, 0.94);
+  width: 0%;
+}
+
+#progress-bar1_1{
+  background-color: rgba(178, 0, 0, 0.94);
+  width: 0%;
+}
+
+#progress-bar2{
+  background-color: rgba(244, 73, 0, 0.94);
+  width: 0%;
+}
+
+#progress-bar2_1{
+  background-color: rgba(244, 73, 0, 0.94);
+  width: 0%;
+}
+
+#progress-bar3{
+  background-color: rgba(42, 0, 142, 0.94);
+  width: 0%;
+}
+
+#progress-bar4{
+  background-color: rgba(0, 107, 32, 0.94);
+  width: 0%;
+}
+
+#progress-bar3_1{
+  background-color: white;
+  width: 0%;
+}
+
+#progress-bar4_1{
+  background-color: white;
+  width: 0%;
+}
+
+#progress-bar5_1{
+  background-color: white;
+  width: 0%;
+}
+.add-line::before{
+  content: "I";
+  background-color: black;
+  color: black;
+  float: left;
+  margin-left: -1px;
+}
+
+.add-line-orange::before{
+  content: "I";
+  background-color: rgba(193, 67, 0, 0.94);
+  color: rgba(193, 67, 0, 0.94);
+  float: left;
+  margin-left: -1px;
+}
+
+ #progress-bar-potential{
+   margin-top: 5px;
+ }
+
+ #open{
+   overflow: hidden;
+   text-align: center;
+   float: right;
+   width: 10rem;
+   margin-left: auto;
+   margin-right: auto;
+   transform: rotate(5deg);
+   color: #FABCBC;
+   padding: 8px 0;
+   font-family: Pacifico, cursive;
+   border: 2px solid rgba(33, 0, 168, 0.94);
+   border-radius: 50%;
+   font-size: 1.5rem;
+   -webkit-transition: all 0.5s;
+ -moz-transition: all 0.5s;
+ transition: all 0.5s;
+ /*Break*/
+ -webkit-animation: openFlash 1.5s ease-in-out infinite alternate;
+ -moz-animation: openFlash 1.5s ease-in-out infinite alternate;
+ animation: openFlash 1.5s ease-in-out infinite alternate;
+ }
+
+ @-webkit-keyframes openFlash {
+   from {
+     text-shadow: 0 0 20px #F73030, 0 0 40px #F73030, 0 0 60px #F73030, 0 0 80px #D60000, 0 0 140px #D60000, 0 0 160px #D60000, 0 0 200px #D60000, 0 0 150px #D60000;
+   }
+   to {
+     text-shadow: 0 0 5px #F73030, 0 0 10px #F73030, 0 0 15px #F73030, 0 0 20px #D60000, 0 0 35px #D60000, 0 0 40px #D60000, 0 0 50px #D60000, 0 0 75px #D60000;
+   }
+ }

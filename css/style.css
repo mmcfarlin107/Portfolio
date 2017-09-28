@@ -1,10 +1,12 @@
+html{
+font-size: 10px;
+}
+
 body{
   background-color: rgba(5,5,5,0.9);
   color: white;
-  font-size: 15px;
 }
 main{
-  box-sizing: border-box;
   padding: 0px 15px;
   max-width: 100%;
   max-width: 1200px;
@@ -33,19 +35,21 @@ h1{
 #headshot{
 max-width: 100%;
 height: auto;
-display: block;
 }
 
 #open-sign{
-  max-width: 25%;
-  float: right;
-  margin-right: 10%;
-  text-align: center;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 2%;
+
 }
 
 #opps{
   white-space: nowrap;
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #landing-page{
@@ -121,7 +125,7 @@ display: block;
  #open{
    overflow: hidden;
    text-align: center;
-   float: right;
+   font-size: 1.5rem;
    width: 10rem;
    margin-left: auto;
    margin-right: auto;
@@ -131,7 +135,6 @@ display: block;
    font-family: Pacifico, cursive;
    border: 2px solid rgba(33, 0, 168, 0.94);
    border-radius: 50%;
-   font-size: 1.5rem;
    -webkit-transition: all 0.5s;
  -moz-transition: all 0.5s;
  transition: all 0.5s;
@@ -148,4 +151,29 @@ display: block;
    to {
      text-shadow: 0 0 5px #F73030, 0 0 10px #F73030, 0 0 15px #F73030, 0 0 20px #D60000, 0 0 35px #D60000, 0 0 40px #D60000, 0 0 50px #D60000, 0 0 75px #D60000;
    }
+ }
+
+
+
+ @media screen and (min-width: 768px){
+body{
+  font-size: 15px;
+}
+  #open-sign{
+    float: right;
+    margin-right: 10%;
+  }
+
+}
+
+ }
+
+ /*medium screens and up only*/
+ @media screen and (min-width: 992px){
+
+ }
+
+ /*large screens and up only*/
+ @media screen and (min-width: 1200px){
+
  }

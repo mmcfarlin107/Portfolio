@@ -1,3 +1,4 @@
+$(document).ready(function(){
 
   var bar1 = document.getElementById("progress-bar1");
   var bar2 = document.getElementById("progress-bar2");
@@ -51,3 +52,17 @@ function progressGrowth(){
       width=-30;
     }
   }
+
+  $(window).resize(function(){
+    moveOpenSign();
+})
+
+function moveOpenSign(){
+  console.log('should move');
+if($(window).width() < 768){
+  $("#open-sign").insertAfter("#headshot-container")} else if
+    ($(window).width() > 768){
+      $("#open-sign").insertBefore("#headshot-container")}
+
+  }
+});

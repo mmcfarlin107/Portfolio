@@ -21,13 +21,13 @@ function progressGrowth(){
       bar1_1.style.width = width + '%';
       width += 0.5;
     }
-    else if (width<=33){
+    else if (width<=38){
       bar2.style.width = (width - 25) + '%';
       bar2_1.style.width = (width - 25) + '%';
       width += 0.5;
     } else if (width <= 50){
       bar2.style.width = (width - 25) + '%';
-      bar3_1.style.width = (width - 33) + '%';
+      bar3_1.style.width = (width - 38) + '%';
       width += 0.5;
     }else if (width <= 75){
       bar3.style.width = (width - 50) + '%';
@@ -62,10 +62,9 @@ function progressGrowth(){
 
 function moveOpenSign(){
   console.log('should move');
-if($(window).width() < 768){
+if($(window).width() < 600){
   $("#open-sign").insertAfter("#headshot-container")} else if
-    ($(window).width() > 768){
+    ($(window).width() >= 600){
       $("#open-sign").insertBefore("#headshot-container")}
-
   }
 });

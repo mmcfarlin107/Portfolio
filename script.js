@@ -7,35 +7,34 @@
   var bar3_1 = document.getElementById("progress-bar3_1");
   var bar4_1 = document.getElementById("progress-bar4_1")
   var bar5_1 = document.getElementById("progress-bar5_1");
-  var width=-5;
+  var width = -5;
 
-setInterval(progressGrowth, 25);
+  setInterval(progressGrowth, 25);
 
-function progressGrowth(){
-  // Never clear interval so it is an intentional infinite loop
-  //Also the width is set to -5 to give some extra time for the progress bar to clear.  Otherwise the bar would not clear all the way because the loop is too fast.
+  function progressGrowth() {
+    // Never clear interval so it is an intentional infinite loop
+    //Also the width is set to -5 to give some extra time for the progress bar to clear.  Otherwise the bar would not clear all the way because the loop is too fast.
     if (width <= 25) {
       bar1.style.width = width + '%';
       bar1_1.style.width = width + '%';
       width += 0.5;
-    }
-    else if (width<=38){
+    } else if (width <= 38) {
       bar2.style.width = (width - 25) + '%';
       bar2_1.style.width = (width - 25) + '%';
       width += 0.5;
-    } else if (width <= 50){
+    } else if (width <= 50) {
       bar2.style.width = (width - 25) + '%';
       bar3_1.style.width = (width - 38) + '%';
       width += 0.5;
-    }else if (width <= 75){
+    } else if (width <= 75) {
       bar3.style.width = (width - 50) + '%';
       bar4_1.style.width = (width - 50) + '%';
       width += 0.5;
-    } else if (width <= 100){
+    } else if (width <= 100) {
       bar4.style.width = (width - 75) + '%';
       bar5_1.style.width = (width - 75) + '%';
       width += 0.5;
-    }else if (width <= 150){
+    } else if (width <= 150) {
       width += 0.25;
     } else {
       bar1.style.width = 0 + '%';
@@ -47,6 +46,6 @@ function progressGrowth(){
       bar3_1.style.width = 0 + '%';
       bar4_1.style.width = 0 + '%';
       bar5_1.style.width = 0 + '%';
-      width=-30;
+      width = -30;
     }
-}
+  }

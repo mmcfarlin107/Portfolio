@@ -1,47 +1,50 @@
-html{
-font-size: 15px;
+html {
+  font-size: 15px;
 }
 
-.label-container{
+.label-container {
   font-size: 1rem;
   margin-top: 0.5%;
 }
 
-.bar-title{
-font-size:  1.15rem;
+.bar-title {
+  font-size: 1.15rem;
 }
 
-h1{
+h1 {
   text-decoration: underline;
 }
 
-body{
+body {
   color: white;
-    background-image: url(../images/grey_denim.png);
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-  }
+  background-image: url(../images/grey_denim.png);
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
 
-footer{
+footer {
   text-align: center;
 }
-.contact-icon{
-    padding: 2% 1%;
+
+.contact-icon {
+  padding: 2% 1%;
 }
-main{
-  background-color: rgba(5,5,5,0.9);
+
+main {
+  background-color: rgba(5, 5, 5, 0.9);
   padding: 0px 5%;
   max-width: 100%;
 }
 
-h1{
-  text-align: center;
-}
-.see-more{
+h1 {
   text-align: center;
 }
 
-#projects-container{
+.see-more {
+  text-align: center;
+}
+
+#projects-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -49,41 +52,41 @@ h1{
   align-content: center;
 }
 
-#projects-title{
+#projects-title {
   text-decoration: underline;
 }
 
-.project-tab{
+.project-tab {
   flex-basis: 25%;
   min-width: 250px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.projects{
+.projects {
   text-align: center;
   margin-top: 2%;
   padding-top: 2%;
   background-color: rgba(0, 0, 118, 0.8);
 }
 
-.img-container{
-width: 100%;
-height: auto;
-overflow: hidden;
+.img-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
-.img-project{
-max-width: 100%;
-height: auto;
-display: block;
+.img-project {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-#paragraph{
+#paragraph {
   text-align: center;
 }
 
-#headshot-container{
+#headshot-container {
   max-width: 24%;
   margin-left: 38%;
   margin-right: 38%;
@@ -93,85 +96,85 @@ display: block;
   border: 2px solid rgba(84, 78, 78, 1);
 }
 
-.skill-name{
+.skill-name {
   display: inline-block;
   padding: 2%;
-  background-color: rgba(128,0,0,.8);
+  background-color: rgba(128, 0, 0, .8);
   margin: 1px;
 }
 
-#headshot{
-max-width: 100%;
-height: auto;
+#headshot {
+  max-width: 100%;
+  height: auto;
 }
 
-#open-sign{
+#open-sign {
   text-align: center;
   max-width: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2%;
-
 }
 
-#opps{
+#opps {
   text-align: center;
   white-space: nowrap;
   margin-left: auto;
   margin-right: auto;
 }
 
-#landing-page{
+#landing-page {
   height: auto;
   width: 100%;
   padding-top: 2rem;
 }
 
-#progress-bar1{
+#progress-bar1 {
   background-color: rgba(178, 0, 0, 0.94);
   width: 0%;
 }
 
-#progress-bar1_1{
+#progress-bar1_1 {
   background-color: rgba(178, 0, 0, 0.94);
   width: 0%;
 }
 
-#progress-bar2{
+#progress-bar2 {
   background-color: rgba(244, 73, 0, 0.94);
   width: 0%;
 }
 
-#progress-bar2_1{
+#progress-bar2_1 {
   background-color: rgba(244, 73, 0, 0.94);
   width: 0%;
 }
 
-#progress-bar3{
+#progress-bar3 {
   background-color: rgba(42, 0, 142, 0.94);
   width: 0%;
 }
 
-#progress-bar4{
+#progress-bar4 {
   background-color: rgba(0, 107, 32, 0.94);
   width: 0%;
 }
 
-#progress-bar3_1{
+#progress-bar3_1 {
   background-color: white;
   width: 0%;
 }
 
-#progress-bar4_1{
+#progress-bar4_1 {
   background-color: white;
   width: 0%;
 }
 
-#progress-bar5_1{
+#progress-bar5_1 {
   background-color: white;
   width: 0%;
 }
-.add-line::before{
+
+.add-line::before {
   content: "I";
   background-color: black;
   color: black;
@@ -179,7 +182,7 @@ height: auto;
   margin-left: -1px;
 }
 
-.add-line-orange::before{
+.add-line-orange::before {
   content: "I";
   background-color: rgba(193, 67, 0, 0.94);
   color: rgba(193, 67, 0, 0.94);
@@ -187,74 +190,67 @@ height: auto;
   margin-left: -1px;
 }
 
- #progress-bar-potential{
-   margin-top: 5px;
- }
-
- #open{
-   overflow: hidden;
-   text-align: center;
-   font-size: 1.5rem;
-   width: 10rem;
-   margin-left: auto;
-   margin-right: auto;
-   transform: rotate(5deg);
-   color: #FABCBC;
-   padding: 8px 0;
-   font-family: Pacifico, cursive;
-   border: 2px solid rgba(33, 0, 168, 0.94);
-   border-radius: 50%;
-   -webkit-transition: all 0.5s;
- -moz-transition: all 0.5s;
- transition: all 0.5s;
- /*Break*/
- -webkit-animation: openFlash 1.5s ease-in-out infinite alternate;
- -moz-animation: openFlash 1.5s ease-in-out infinite alternate;
- animation: openFlash 1.5s ease-in-out infinite alternate;
- }
-
- @-webkit-keyframes openFlash {
-   from {
-     text-shadow: 0 0 20px #F73030, 0 0 40px #F73030, 0 0 60px #F73030, 0 0 80px #D60000, 0 0 140px #D60000, 0 0 160px #D60000, 0 0 200px #D60000, 0 0 150px #D60000;
-   }
-   to {
-     text-shadow: 0 0 5px #F73030, 0 0 10px #F73030, 0 0 15px #F73030, 0 0 20px #D60000, 0 0 35px #D60000, 0 0 40px #D60000, 0 0 50px #D60000, 0 0 75px #D60000;
-   }
- }
-
-
-
- @media screen and (min-width: 768px){
-body{
-  font-size: 20px;
+#progress-bar-potential {
+  margin-top: 5px;
 }
-  #open-sign{
+
+#open {
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(5deg);
+  color: #FABCBC;
+  padding: 8px 0;
+  font-family: Pacifico, cursive;
+  border: 2px solid rgba(33, 0, 168, 0.94);
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  /*Break*/
+  -webkit-animation: openFlash 1.5s ease-in-out infinite alternate;
+  -moz-animation: openFlash 1.5s ease-in-out infinite alternate;
+  animation: openFlash 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes openFlash {
+  from {
+    text-shadow: 0 0 20px #F73030, 0 0 40px #F73030, 0 0 60px #F73030, 0 0 80px #D60000, 0 0 140px #D60000, 0 0 160px #D60000, 0 0 200px #D60000, 0 0 150px #D60000;
+  }
+  to {
+    text-shadow: 0 0 5px #F73030, 0 0 10px #F73030, 0 0 15px #F73030, 0 0 20px #D60000, 0 0 35px #D60000, 0 0 40px #D60000, 0 0 50px #D60000, 0 0 75px #D60000;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+  #open-sign {
     float: right;
     margin-right: 10%;
   }
-
-  #headshot-container{
+  #headshot-container {
     display: inline-block;
-width: 18%;
+    width: 18%;
     margin-left: 41%;
     margin-right: 0;
     border: 2px solid rgba(84, 78, 78, 1);
   }
-
 }
 
- }
 
- /*medium screens and up only*/
- @media screen and (min-width: 992px){
-
- }
-
- /*large screens and up only*/
- @media screen and (min-width: 1200px){
-   main{
-   max-width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
-   }
- }
+}
+/*medium screens and up only*/
+@media screen and (min-width: 992px) {}
+/*large screens and up only*/
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

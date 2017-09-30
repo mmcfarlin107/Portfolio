@@ -62,9 +62,9 @@ function progressGrowth(){
 
 function moveOpenSign(){
   console.log('should move');
-if($(window).width() < 600){
+if($(window).width() < 768){
   $("#open-sign").insertAfter("#headshot-container")} else if
-    ($(window).width() >= 600){
+    ($(window).width() >= 768){
       $("#open-sign").insertBefore("#headshot-container")}
   }
 });

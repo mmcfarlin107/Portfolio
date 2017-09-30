@@ -53,18 +53,18 @@ function progressGrowth(){
     }
   }
 
-  $(window).ready(function(){
-    moveOpenSign();
-  });
-  $(window).resize(function(){
-    moveOpenSign();
-})
-
-function moveOpenSign(){
-  console.log('should move');
-if($(window).width() < 768){
-  $("#open-sign").insertAfter("#headshot-container")} else if
-    ($(window).width() >= 768){
-      $("#open-sign").insertBefore("#headshot-container")}
-  }
-});
+//   $(window).ready(function(){
+//     moveOpenSign();
+//   });
+//   $(window).resize(function(){
+//     moveOpenSign();
+// })
+//
+// function moveOpenSign(){
+//   console.log('should move');
+// if($(window).width() < 768){
+//   $("#open-sign").insertAfter("#headshot-container")} else if
+//     ($(window).width() >= 768){
+//       $("#open-sign").insertBefore("#headshot-container")}
+//   }
+// });

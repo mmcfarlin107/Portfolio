@@ -2,16 +2,8 @@ html {
   font-size: 15px;
 }
 
-.label-container {
-  font-size: 1rem;
-  margin-top: 0.5%;
-}
-
-.bar-title {
-  font-size: 1.15rem;
-}
-
 h1 {
+  text-align: center;
   text-decoration: underline;
 }
 
@@ -22,22 +14,27 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-footer {
-  text-align: center;
-}
-
-.contact-icon {
-  padding: 2% 1%;
-}
-
 main {
   background-color: rgba(5, 5, 5, 0.9);
   padding: 0px 5%;
   max-width: 100%;
 }
 
-h1 {
+footer {
   text-align: center;
+}
+
+.label-container {
+  font-size: 1rem;
+  margin-top: 0.5%;
+}
+
+.bar-title {
+  font-size: 1.15rem;
+}
+
+.contact-icon {
+  padding: 2% 1%;
 }
 
 .see-more {
@@ -210,12 +207,12 @@ h1 {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  /*Break*/
+/*animations acting on element*/
   -webkit-animation: openFlash 1.5s ease-in-out infinite alternate;
   -moz-animation: openFlash 1.5s ease-in-out infinite alternate;
   animation: openFlash 1.5s ease-in-out infinite alternate;
 }
-
+/*Flashing Animations*/
 @-webkit-keyframes openFlash {
   from {
     text-shadow: 0 0 20px #F73030, 0 0 40px #F73030, 0 0 60px #F73030, 0 0 80px #D60000, 0 0 140px #D60000, 0 0 160px #D60000, 0 0 200px #D60000, 0 0 150px #D60000;
@@ -224,10 +221,15 @@ h1 {
     text-shadow: 0 0 5px #F73030, 0 0 10px #F73030, 0 0 15px #F73030, 0 0 20px #D60000, 0 0 35px #D60000, 0 0 40px #D60000, 0 0 50px #D60000, 0 0 75px #D60000;
   }
 }
-
+/*Media Query Start*/
 @media screen and (min-width: 768px) {
-  body {
+  html {
     font-size: 20px;
+  }
+  main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   #open-sign {
     float: right;
@@ -239,18 +241,5 @@ h1 {
     margin-left: 41%;
     margin-right: 0;
     border: 2px solid rgba(84, 78, 78, 1);
-  }
-}
-
-
-}
-/*medium screens and up only*/
-@media screen and (min-width: 992px) {}
-/*large screens and up only*/
-@media screen and (min-width: 1200px) {
-  main {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

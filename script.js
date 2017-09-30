@@ -1,5 +1,3 @@
-$(document).ready(function(){
-
   var bar1 = document.getElementById("progress-bar1");
   var bar2 = document.getElementById("progress-bar2");
   var bar3 = document.getElementById("progress-bar3");
@@ -51,20 +49,4 @@ function progressGrowth(){
       bar5_1.style.width = 0 + '%';
       width=-30;
     }
-  }
-
-//   $(window).ready(function(){
-//     moveOpenSign();
-//   });
-//   $(window).resize(function(){
-//     moveOpenSign();
-// })
-//
-// function moveOpenSign(){
-//   console.log('should move');
-// if($(window).width() < 768){
-//   $("#open-sign").insertAfter("#headshot-container")} else if
-//     ($(window).width() >= 768){
-//       $("#open-sign").insertBefore("#headshot-container")}
-//   }
-// });
+}

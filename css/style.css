@@ -2,11 +2,6 @@ html {
   font-size: 15px;
 }
 
-h1 {
-  text-align: center;
-  text-decoration: underline;
-}
-
 body {
   color: white;
   background-image: url(../images/grey_denim.png);
@@ -17,70 +12,28 @@ body {
 main {
   background-color: rgba(5, 5, 5, 0.9);
   padding: 0px 5%;
-  max-width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
   text-align: center;
 }
 
-.label-container {
-  font-size: 1rem;
-  margin-top: 0.5%;
-}
+/*Landing-Page Styling*/
 
-.bar-title {
-  font-size: 1.15rem;
-}
+/*Name, Open, Paragraph Content*/
 
-.contact-icon {
-  padding: 2% 1%;
-}
-
-.see-more {
+h1 {
   text-align: center;
-}
-
-#projects-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-
-#projects-title {
   text-decoration: underline;
 }
 
-.project-tab {
-  flex-basis: 25%;
-  min-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.projects {
-  text-align: center;
-  margin-top: 2%;
-  padding-top: 2%;
-  background-color: rgba(0, 0, 118, 0.8);
-}
-
-.img-container {
+#landing-page {
+  height: auto;
   width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.img-project {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-#paragraph {
-  text-align: center;
+  padding-top: 2rem;
 }
 
 #headshot-container {
@@ -91,13 +44,6 @@ footer {
   overflow: hidden;
   border-radius: 50%;
   border: 2px solid rgba(84, 78, 78, 1);
-}
-
-.skill-name {
-  display: inline-block;
-  padding: 2%;
-  background-color: rgba(128, 0, 0, .8);
-  margin: 1px;
 }
 
 #headshot {
@@ -120,10 +66,52 @@ footer {
   margin-right: auto;
 }
 
-#landing-page {
-  height: auto;
-  width: 100%;
-  padding-top: 2rem;
+#open {
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5rem;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  transform: rotate(5deg);
+  color: #FABCBC;
+  padding: 8px 0;
+  font-family: Pacifico, cursive;
+  border: 2px solid rgba(33, 0, 168, 0.94);
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  /*animations acting on element*/
+  -webkit-animation: openFlash 1.5s ease-in-out infinite alternate;
+  -moz-animation: openFlash 1.5s ease-in-out infinite alternate;
+  animation: openFlash 1.5s ease-in-out infinite alternate;
+}
+
+/*Flashing Animations*/
+
+@-webkit-keyframes openFlash {
+  from {
+    text-shadow: 0 0 20px #F73030, 0 0 40px #F73030, 0 0 60px #F73030, 0 0 80px #D60000, 0 0 140px #D60000, 0 0 160px #D60000, 0 0 200px #D60000, 0 0 150px #D60000;
+  }
+  to {
+    text-shadow: 0 0 5px #F73030, 0 0 10px #F73030, 0 0 15px #F73030, 0 0 20px #D60000, 0 0 35px #D60000, 0 0 40px #D60000, 0 0 50px #D60000, 0 0 75px #D60000;
+  }
+}
+
+#paragraph {
+  text-align: center;
+}
+
+/*Start of Progress Bar Styling */
+
+.label-container {
+  font-size: 1rem;
+  margin-top: 0.5%;
+}
+
+.bar-title {
+  font-size: 1.15rem;
 }
 
 #progress-bar1 {
@@ -191,45 +179,64 @@ footer {
   margin-top: 5px;
 }
 
-#open {
-  overflow: hidden;
-  text-align: center;
-  font-size: 1.5rem;
-  width: 10rem;
+/*Start of Projects Styling*/
+
+#projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+#projects-title {
+  text-decoration: underline;
+}
+
+.project-tab {
+  flex-basis: 25%;
+  min-width: 250px;
   margin-left: auto;
   margin-right: auto;
-  transform: rotate(5deg);
-  color: #FABCBC;
-  padding: 8px 0;
-  font-family: Pacifico, cursive;
-  border: 2px solid rgba(33, 0, 168, 0.94);
-  border-radius: 50%;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-/*animations acting on element*/
-  -webkit-animation: openFlash 1.5s ease-in-out infinite alternate;
-  -moz-animation: openFlash 1.5s ease-in-out infinite alternate;
-  animation: openFlash 1.5s ease-in-out infinite alternate;
 }
-/*Flashing Animations*/
-@-webkit-keyframes openFlash {
-  from {
-    text-shadow: 0 0 20px #F73030, 0 0 40px #F73030, 0 0 60px #F73030, 0 0 80px #D60000, 0 0 140px #D60000, 0 0 160px #D60000, 0 0 200px #D60000, 0 0 150px #D60000;
-  }
-  to {
-    text-shadow: 0 0 5px #F73030, 0 0 10px #F73030, 0 0 15px #F73030, 0 0 20px #D60000, 0 0 35px #D60000, 0 0 40px #D60000, 0 0 50px #D60000, 0 0 75px #D60000;
-  }
+
+.projects {
+  text-align: center;
+  margin-top: 2%;
+  padding-top: 2%;
+  background-color: rgba(0, 0, 118, 0.8);
 }
+
+.img-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-project {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.skill-name {
+  display: inline-block;
+  padding: 2%;
+  background-color: rgba(128, 0, 0, .8);
+  margin: 1px;
+}
+
+/*Footer Styling*/
+
+.contact-icon {
+  padding: 2% 1%;
+}
+
 /*Media Query Start*/
+
 @media screen and (min-width: 768px) {
   html {
     font-size: 20px;
-  }
-  main {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
   #open-sign {
     float: right;
